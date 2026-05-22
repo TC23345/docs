@@ -1,97 +1,39 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "IEP Advocacy Course Harness"
+description: "Companion site and agentic harness for Pivot into IEP Advocacy"
 ---
 
-## Setting up
+import Disclaimer from '/snippets/disclaimer.mdx';
 
-Get your documentation site up and running in minutes.
+A companion workspace for working through the 8-module **Pivot into IEP Advocacy** course while building Rylee's private-pay practice. Combines:
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+- a browsable course companion (this site)
+- a committed practice ledger (`workspace/` in the repo)
+- agentic skills and commands (`.claude/skills/`, `.claude/commands/`) Rylee uses through Claude Code
 
-## Make it yours
+<Disclaimer />
 
-Design a docs site that looks great and empowers your users.
+## Where to start
 
 <Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
+  <Card title="Course overview" icon="graduation-cap" href="/course/index">
+    The 8 modules with relevance markers.
   </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
+  <Card title="Module 1: Business of Private Pay" icon="briefcase" href="/course/module-1-business">
+    Start here — first month of the course.
   </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
+  <Card title="How to use the harness" icon="wand-magic-sparkles" href="/harness/index">
+    Commands, skills, and the session-start ritual.
   </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
+  <Card title="Illinois resources" icon="location-dot" href="/course/il-resources">
+    ISBE links and IL-specific filings (added in Tier 2).
   </Card>
 </Columns>
 
-## Create beautiful pages
+## In a Claude Code session
 
-Everything you need to create world-class documentation.
+```
+/session-start
+```
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
-
-## Need inspiration?
-
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+That command reads `workspace/progress.md` and surfaces where you left off.

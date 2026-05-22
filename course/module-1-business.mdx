@@ -1,0 +1,48 @@
+---
+title: "Module 1: Business of Private Pay"
+description: "Entity, insurance, services, back-end systems, intake process"
+---
+
+import Disclaimer from '/snippets/disclaimer.mdx';
+
+```yaml
+relevance: high
+rylee_already_knows: [clinical scope of BCBA practice, supervision rules under IL DFPR/BACB]
+new_for_rylee: [entity formation, business liability insurance for private practice, fee structure design, contract scaffolding, intake automation]
+skills: [business-name, entity-setup, services-fees, intake-process]
+commands: [/session-start, /progress, /new-client]
+```
+
+The course's promise for Module 1: take "research private practice insurance and licensing" off the to-do list. Five deliverables.
+
+## Deliverables
+
+1. **Business name + state entity** — pick a name, check IL Secretary of State availability, register the entity.
+2. **Liability insurance updated** — extend professional liability coverage to the new private practice.
+3. **Services + fee structure** — define exactly what services Rylee offers and the fee for each.
+4. **Back-end systems** — file organization, document storage, contract scaffolding.
+5. **Client intake process** — repeatable intake from first contact through signed engagement.
+
+## Harness for this module
+
+| Deliverable | Skill | Workspace file |
+| --- | --- | --- |
+| Name + entity | `business-name`, `entity-setup` | `workspace/business/name-candidates.md`, `workspace/business/entity-decisions.md` |
+| Insurance | (notes only — handled by broker) | `workspace/business/insurance.md` |
+| Services + fees | `services-fees` | `workspace/business/services-fees.md` |
+| Back-end systems | (covered by repo structure itself) | `workspace/clients/README.md` |
+| Intake process | `intake-process` | `.claude/skills/intake-process/assets/` + `/new-client` |
+
+Trigger any skill conversationally ("let's brainstorm names", "I want to draft the fee schedule"); Claude auto-discovers by skill description. Use `/new-client` once intake is finalized to instantiate a real client folder.
+
+## Working order Rylee usually wants
+
+1. Brainstorm names → land on top 3 → check IL availability
+2. Pick entity type (LLC vs PLLC for a BCBA in IL — defer the tax-classification question to a CPA)
+3. File with IL SoS + get EIN
+4. Talk to insurance broker (the harness can prep questions but does not select coverage)
+5. Draft services catalog and fee schedule
+6. Draft intake form, welcome packet, services-agreement checklist (for attorney review)
+7. Dry-run the intake with a fake client via `/new-client Test-Family`
+
+<Disclaimer />

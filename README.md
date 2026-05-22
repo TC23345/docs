@@ -1,44 +1,34 @@
-# Mintlify Starter Kit
+# IEP Advocacy Course Harness
 
-Use the starter kit to get your docs deployed and ready to customize.
+Companion site + agentic harness for Rylee Coteus (MS, BCBA) and her brother to work through the 8-module **Pivot into IEP Advocacy** course (iepadvocacytraining.com) while building Rylee's private-pay practice.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## What's in here
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- `course/` — Mintlify pages: module summaries, IL resources, glossary
+- `harness/` — Mintlify pages documenting the commands and skills
+- `.claude/skills/` — auto-discovered knowledge+procedure capabilities
+- `.claude/commands/` — Rylee-initiated slash commands (`/session-start`, `/progress`, `/new-client`, `/find`)
+- `.claude/shared/disclaimer.md` — single-source scope-of-practice language
+- `.claude/CHANGELOG.md` — log of every harness change
+- `workspace/` — committed practice ledger (business decisions, client folders, notes, progress)
+- `snippets/disclaimer.mdx` — Mintlify import-side of the disclaimer
+- `CLAUDE.md` — orientation for Claude
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+## Running the docs site locally
 
 ```
 npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+Then open `http://localhost:3000`.
 
-## Publishing changes
+## Using the harness in a Claude Code session
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+```
+/session-start
+```
 
-## Need help?
+That reads `workspace/progress.md` and surfaces where you left off. Then trigger skills conversationally ("let's brainstorm business names" → `business-name` skill loads).
 
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
-- [Mintlify community](https://mintlify.com/community)
+See `harness/index.mdx` for the full guide and `CLAUDE.md` for house rules.

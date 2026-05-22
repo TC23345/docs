@@ -1,0 +1,23 @@
+---
+title: "Skills"
+description: "Auto-discovered knowledge+procedure capabilities"
+---
+
+Skills live at `.claude/skills/<name>/SKILL.md` and are loaded by Claude when your intent matches the skill's `description`. You do not call them by name.
+
+## Tier 1 — live
+
+| Skill | Triggers when you say… | Writes to |
+| --- | --- | --- |
+| `business-name` | "brainstorm names", "check name availability", "naming the practice" | `workspace/business/name-candidates.md` |
+| `entity-setup` | "register the LLC", "PLLC vs LLC", "IL Secretary of State filing", "EIN" | `workspace/business/entity-decisions.md` |
+| `services-fees` | "fee schedule", "what services should I offer", "pricing", "scope of work" | `workspace/business/services-fees.md` |
+| `intake-process` | "intake form", "welcome packet", "services agreement", "client onboarding" | `.claude/skills/intake-process/assets/` (templates) → workspace via `/new-client` |
+
+## Tier 2 — pending
+
+`iep-checklist`, `iep-walkthrough`, `observation-notes` — scaffold when Rylee enters Modules 2–3.
+
+## Tier 3 — deferred
+
+`ideal-client`, `referral-mapper`, `content-generator`, `client-tracker`, `difficult-convo`, `iee-toolkit`, `dispute-pathways`, `evaluation-mapper`, `fulltime-readiness` — scaffold as Rylee enters each module.
