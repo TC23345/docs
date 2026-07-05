@@ -1,83 +1,123 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "IEP Advocacy Course Harness",
+  "name": "Shirley Road IEP Advocacy",
   "colors": {
-    "primary": "#15803D",
-    "light": "#22C55E",
-    "dark": "#14532D"
+    "primary": "#9f1239",
+    "light": "#9f1239",
+    "dark": "#3f6212"
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "/"
   },
   "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "light",
+    "strict": false
+  },
+  "fonts": {
+    "family": "Geist",
+    "heading": {
+      "family": "Newsreader"
+    },
+    "body": {
+      "family": "Geist"
+    }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "background": {
+    "color": {
+      "light": "#f7f4ee",
+      "dark": "#1c1917"
+    }
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs",
+    "codeblocks": {
+      "theme": {
+        "light": "github-light",
+        "dark": "github-dark"
+      }
+    }
+  },
+  "thumbnails": {
+    "appearance": "light",
+    "background": "/images/shirley-road-social.svg",
+    "fonts": {
+      "family": "Newsreader"
+    }
+  },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Course",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "index",
-              "course/index"
-            ]
-          },
-          {
-            "group": "Modules",
-            "pages": [
-              "course/module-1-business",
-              "course/module-2-spedsystem",
-              "course/module-3-iep-expert",
-              "course/module-4-practice",
-              "course/module-5-first-clients",
-              "course/module-6-working-clients",
-              "course/module-7-advanced",
-              "course/module-8-fulltime"
-            ]
-          }
+        "group": "Start Here",
+        "pages": [
+          "index"
         ]
       },
       {
-        "tab": "Reference",
-        "groups": [
-          {
-            "group": "Reference",
-            "pages": [
-              "course/glossary",
-              "course/il-resources"
-            ]
-          }
+        "group": "Services",
+        "pages": [
+          "services",
+          "how-it-works"
         ]
       },
       {
-        "tab": "Harness",
-        "groups": [
-          {
-            "group": "Using the harness",
-            "pages": [
-              "harness/index",
-              "harness/commands",
-              "harness/skills"
-            ]
-          }
+        "group": "Guides",
+        "pages": [
+          "guides/index",
+          "guides/iep-vs-504",
+          "guides/meeting-checklist",
+          "guides/evaluations-eligibility",
+          "guides/goals-services-accommodations",
+          "guides/discipline-mdr",
+          "guides/transition-planning"
+        ]
+      },
+      {
+        "group": "Illinois Resources",
+        "pages": [
+          "illinois-resources"
+        ]
+      },
+      {
+        "group": "About",
+        "pages": [
+          "about"
         ]
       }
     ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Guides",
+        "href": "/guides"
+      },
+      {
+        "label": "Resources",
+        "href": "/illinois-resources"
+      }
+    ],
     "primary": {
       "type": "button",
-      "label": "iepadvocacytraining.com",
-      "href": "https://www.iepadvocacytraining.com/"
+      "label": "Request a consultation",
+      "href": "mailto:hello@shirleyroadiep.com"
     }
   },
   "contextual": {
     "options": [
       "copy",
       "view",
+      "chatgpt",
       "claude"
     ]
   },

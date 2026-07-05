@@ -1,0 +1,20 @@
+# Local/internal material must not return to the public Mintlify site
+.claude/
+workspace/
+
+# Dependencies and build output
+node_modules/
+.mintlify/
+.next/
+out/
+
+# Environment
+.env
+.env.*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
